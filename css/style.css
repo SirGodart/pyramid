@@ -1,0 +1,220 @@
+	
+					@font-face {
+		  font-family: 'Roboto';
+		  font-style: normal;
+		  font-weight: 300;
+		  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v15/0eC6fl06luXEYWpBSJvXCIX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+	
+		}
+
+
+		body {
+				
+				background-color: black;
+				margin: 0px;
+				overflow: hidden;
+			}
+
+			a {
+				color:#0078ff;
+			}
+
+
+			#wrapper {
+
+				mix-blend-mode: difference;
+				background-color: white;
+				width: 100%;
+				height: 100%;
+				position: absolute;
+
+			}
+
+
+			#container {
+
+				  padding-left: 0;
+                position: absolute;
+
+			}
+
+
+
+			 .overlay {
+		              -webkit-box-align: center;
+		              -webkit-box-pack: center;
+		              -webkit-transition: 0.25s opacity;
+		              background: -webkit-radial-gradient(rgba(127, 127, 127, 0.5),
+		                                                  rgba(127, 127, 127, 0.5) 1%,
+		                                                  rgba(0, 0, 0, 0.7));
+		              bottom: 0;
+		              display: -webkit-box;
+		              left: 0;
+		              padding: 20px;
+		              padding-bottom: 130px;
+		              position: fixed;
+		              right: 0;
+		              top: 0;
+		              z-index: -10;
+		          
+    }
+
+			#bg {
+
+				
+
+				  background-color: transparent;
+
+				  -webkit-background-size: cover;
+				  -moz-background-size: cover;
+				  -o-background-size: cover;
+				  background-size: cover;
+				  z-index: 1;
+
+			}
+
+
+
+
+			#trans {
+
+
+
+
+				-webkit-animation-name: spin;
+			    -webkit-animation-duration: 5000ms;
+			    -webkit-animation-iteration-count: infinite;
+			    -webkit-animation-timing-function: linear;
+			    -moz-animation-name: spin;
+			    -moz-animation-duration: 5000ms;
+			    -moz-animation-iteration-count: infinite;
+			    -moz-animation-timing-function: linear;
+			    -ms-animation-name: spin;
+			    -ms-animation-duration: 5000ms;
+			    -ms-animation-iteration-count: infinite;
+			    -ms-animation-timing-function: linear;
+			    
+			    animation-name: spin;
+			    animation-duration: 5000ms;
+			    animation-iteration-count: infinite;
+			    animation-timing-function: linear;
+
+			
+				border:none; 
+				outline: none;
+
+
+				mix-blend-mode: soft-light;
+		
+
+
+			
+				position: absolute;
+				
+				width: 800px;
+				height: 800px;
+				pointer-events: none;
+				z-index: 0;
+				opacity: 1.0;
+			}
+
+
+
+			#trans2 {
+
+
+				
+
+				-webkit-animation-name: spin;
+			    -webkit-animation-duration: 10000ms;
+			    -webkit-animation-iteration-count: infinite;
+			    -webkit-animation-timing-function: linear;
+			    -moz-animation-name: spin;
+			    -moz-animation-duration: 10000ms;
+			    -moz-animation-iteration-count: infinite;
+			    -moz-animation-timing-function: linear;
+			    -ms-animation-name: spin;
+			    -ms-animation-duration: 10000ms;
+			    -ms-animation-iteration-count: infinite;
+			    -ms-animation-timing-function: linear;
+			    
+			    animation-name: spin;
+			    animation-duration: 10000ms;
+			    animation-iteration-count: infinite;
+			    animation-timing-function: linear;
+
+			
+				border:none; 
+				outline: none;
+
+
+				mix-blend-mode: screen;
+		
+
+
+
+				
+			
+				position: absolute;
+				
+				width: 432px;
+				height: 316px;
+				pointer-events: none;
+				z-index: 0;
+				opacity: 1.0;
+			}
+
+
+			#topText {
+
+				
+				margin-left: 20px;
+				margin-top: 20px;
+
+				
+				
+			
+			
+
+			}
+
+
+			.matrix {
+
+
+			
+				opacity: 0.0;
+				position: absolute;
+				color: white;
+				font-size: 11px;
+				font-family: Roboto;
+				font-weight: regular;
+				letter-spacing: 0.3em;
+
+			}
+
+
+
+			@-ms-keyframes spin {
+			    from { -ms-transform: rotate(0deg); }
+			    to { -ms-transform: rotate(360deg); }
+			}
+			@-moz-keyframes spin {
+			    from { -moz-transform: rotate(0deg); }
+			    to { -moz-transform: rotate(360deg); }
+			}
+			@-webkit-keyframes spin {
+			    from { -webkit-transform: rotate(0deg); }
+			    to { -webkit-transform: rotate(360deg); }
+			}
+			@keyframes spin {
+			    from {
+			        transform:rotate(0deg);
+			    }
+			    to {
+			        transform:rotate(360deg);
+			    }
+			}
+
+
+
